@@ -1,0 +1,23 @@
+.perfil{
+display: flex;
+background-color: rgb(39, 38, 38);
+padding: 30px;
+border-radius: 20px;
+margin: 20px;
+}
+span{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-size: 30px;
+    text-align: center;
+}

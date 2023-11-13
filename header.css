@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header2 {
+    position: relative;
+    z-index: 1;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Puedes ajustar el color según tu preferencia */
+    padding: 10px;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-list li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-list .productos a {
+    padding: 15px 20px; /* Ajusta el padding según sea necesario para el área alrededor de "Productos" */
+    display: block;
+}
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #3498db; /* Cambia el color al pasar el mouse */
+}
+
+a,.global{
+    text-decoration: none;
+    color: white;
+}
+
+.cont-ul {
+    margin-top: 100px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    margin-right: 50px;
+    position: absolute;
+}
+
+.global {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.3 ease 0s;
+    border-radius: 5px;
+
+}
+
+.global:hover {
+    background-color: rgb(110, 110, 110);
+    color: black;
+}
+
+.ul-second {
+    position: absolute;
+    display: none;
+    transform: translateY(-70px);
+    transition: 2s;
+
+}
+
+.ul-second>.global {
+    text-align: center;
+    background-color: rgb(48, 47, 47);
+    padding: 10px;
+    width: 150px;
+    transform: translateX(90px);
+
+    padding: 20px;
+}
+
+.ul-second>.global:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+.productos:hover>.ul-second {
+    display: block;
+
+}

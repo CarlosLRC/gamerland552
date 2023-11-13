@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/i2.jpg') center/cover no-repeat;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: aqua;
+    margin: 0; /* Asegúrate de quitar cualquier margen predeterminado del cuerpo */
+    padding: 0; /* Asegúrate de quitar cualquier relleno predeterminado del cuerpo */
+}
+
+.left-image,
+.right-image {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según sea necesario */
+    width: 220px; /* Ajusta el ancho según sea necesario */
+    height: 220px; /* Ajusta la altura según sea necesario */
+}
+.center-image {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Coloca la imagen en el centro horizontalmente */
+    transform: translateX(-50%); /* Centra la imagen en relación con su propio ancho */
+    width: 220px; /* Ajusta el ancho según sea necesario */
+    height: 220px; /* Ajusta la altura según sea necesario */
+    background: url('img/logo.png') center/cover no-repeat; /* Cambia la ruta de la tercera imagen */
+}
+
+.left-image {
+    left: 70px; /* Ajusta la posición horizontal para la imagen izquierda */
+    background: url('img/logo.png') center/cover no-repeat; /* Cambia la ruta de la primera imagen */
+}
+
+.right-image {
+    right: 70px; /* Ajusta la posición horizontal para la imagen derecha */
+    background: url('img/logo.png') center/cover no-repeat; /* Cambia la ruta de la primera imagen */
+}
+
+/* Estilos del submenú */
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.nav-list li:hover .sub-menu {
+    display: block; /* Muestra el submenú al pasar el ratón sobre el elemento padre */
+}
+
+.sub-menu li {
+    display: block;
+    text-align: left;
+    padding: 10px;
+}
+
+
+.sub-menu a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sub-menu a:hover {
+    background-color: #3498db; /* Cambia el color al pasar el mouse */
+}
+.nav-list li:hover .sub-menu {
+    display: block;
+}
+.productos:hover .sub-menu {
+    display: block;
+}
+/* Ajuste para el submenú de Productos */
+.nav-list .productos:hover .sub-menu {
+    display: block;
+}
+.as {
+    text-align: center;
+    margin: 0;
+}
+
+.si {
+    font-size: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+header h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.contenedor {
+
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+    background-color: white;
+    padding: 10px;
+}
+
+.contenedor-items {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 20px;
+    grid-row-gap: 40px;
+    width: 100%;
+    transition: .7s;
+}
+
+.footer {
+    background-color: #635f5f; /* Color de fondo gris */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+.footer-content {
+    max-width: 1200px; /* Ajusta según sea necesario */
+    margin: 0 auto; /* Centra el contenido en el contenedor */
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido uniformemente */
+}
+
+.footer-section {
+    width: 45%; /* Ajusta según sea necesario */
+}
+
+/* Estilos adicionales para el texto dentro del pie de página */
+.footer h3 {
+    color: #573d5a; /* Cambia el color del texto del encabezado según tus preferencias */
+}
+
+.footer p {
+    color: #ffffff; /* Cambia el color del texto del párrafo según tus preferencias */
+}
+
+.item {
+    max-width: 220px;
+    margin: auto;
+    border: 2px solid gray;
+    border-radius: 15px;
+    overflow: hidden; /* Para asegurar que las esquinas redondeadas no se vean afectadas por las sombras */
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: white;
+}
+
+.img-item {
+    width: 100%;
+    max-height: 300px; /* Ajusta la altura máxima de la imagen según tus necesidades */
+    object-fit: cover; /* Ajusta cómo la imagen cubre el contenedor manteniendo su relación de aspecto */
+}
+
+.item:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 15px blueviolet;
+}
+
+.titulo-item {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0; /* Elimina el margen predeterminado que podría afectar el centrado vertical */
+}
+
+.precio-item {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
+
+.button-item {
+    display: block;
+    margin: 30px auto;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.button-item:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.carrito {
+    box-shadow: 0 0 15px grey;
+    border: 3px solid #313131;
+    width: 25%;
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: 0.6s;
+    margin-right: -90%;
+    opacity: 0;
+}
+
+.header-carrito {
+    background-color: #858585;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.carrito-item {
+    display: block;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #666;
+    padding: 20px;
+}
+
+.carrito .carrito-item img {
+    margin: 0;
+    max-width: 100px;
+}
+
+.carrito-item-titulo {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.selector-cantidad {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.carrito-item-cantidad {
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.selector-cantidad i {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.carrito-item-precio {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.btn-eliminar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #000;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+
+.btn-eliminar i {
+    pointer-events: none;
+}
+
+.carrito-total {
+    background-color: #141414;
+    color: white;
+    padding: 20px;
+}
+
+.carrito-total .fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carrito-total .btn-pagar {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #8f8f8f;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.carrito-total .btn-pagar:hover {
+    transform: scale(1.05);
+    background-color: #313131;
+    color: white;
+}

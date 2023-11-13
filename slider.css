@@ -1,0 +1,103 @@
+body{
+    height: 200vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.todotdo {
+    display: flex;
+    justify-content: space-between; /* Distribuye las secciones de slider en el espacio disponible */
+    margin-top: -50px;
+}
+
+.landan{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.landan2{
+    margin-top: -290px;
+}
+.slider-frame,
+.slider-framee {
+    width: 200px;
+    height: 420px;
+    margin: 100px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame .sii,
+.slider-framee .siii {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame .slider,
+.slider-framee .sliderr {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img,
+.slider-framee img {
+    width: 100%;
+}
+
+/* Estilos para la segunda sección de slider */
+.slider-framee {
+    width: 300px;
+    height: 620px;
+    margin: 100px auto 0;
+    overflow: hidden;
+}
+
+.slider-framee .siii {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-framee .sliderr {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-framee img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+
+    20% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+}
